@@ -1,0 +1,5 @@
+# ignored files
+
+**/.idea/vcs.xml
+**.idea/workspace.xml
+bin/
