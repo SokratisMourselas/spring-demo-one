@@ -10,7 +10,7 @@ public class HelloSpringApp {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         //retrieve bean
-        Coach theCoach = context.getBean("myCoach", Coach.class);
+        Coach theCoach = context.getBean("myBaseballCoach", Coach.class);
 
         //call methods on the bean
         System.out.println("BASEBALL COACH: " + theCoach.getDailyWorkout());
