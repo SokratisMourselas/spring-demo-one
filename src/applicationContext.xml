@@ -29,6 +29,8 @@
 
     <bean id="myCricketCoach"
           class="com.spring.springdemo.CricketCoach">
+
+        <!-- Setting up a setter injection -->
         <property name="fortuneService" ref="myFortuneService"/>
      </bean>
 

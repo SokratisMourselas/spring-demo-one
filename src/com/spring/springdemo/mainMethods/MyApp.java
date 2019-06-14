@@ -1,4 +1,7 @@
-package com.spring.springdemo;
+package com.spring.springdemo.mainMethods;
+
+import com.spring.springdemo.Coach;
+import com.spring.springdemo.TrackCoach;
 
 public class MyApp {
 
