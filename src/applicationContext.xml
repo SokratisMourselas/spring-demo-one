@@ -27,6 +27,11 @@
         <property name="printedLoggerLevel" value="FINE"/>
     </bean>
 
+    <bean id="myCricketCoach"
+          class="com.spring.springdemo.CricketCoach">
+        <property name="fortuneService" ref="myFortuneService"/>
+     </bean>
+
 
 </beans>
 
