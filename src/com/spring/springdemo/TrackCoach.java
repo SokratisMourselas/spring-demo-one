@@ -12,6 +12,11 @@ public class TrackCoach implements Coach {
 		return null;
 	}
 
+	@Override
+	public String getRandomFortune() {
+		return null;
+	}
+
 }
 
 

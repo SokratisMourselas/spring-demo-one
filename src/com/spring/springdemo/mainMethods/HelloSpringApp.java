@@ -9,7 +9,6 @@ public class HelloSpringApp {
 
         // load spring config
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-
         //retrieve bean
         Coach theCoach = context.getBean("myBaseballCoach", Coach.class);
 

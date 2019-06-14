@@ -4,4 +4,6 @@ public interface FortuneService {
 
     String getFortune();
 
+    String getRandomFortune();
+
 }
