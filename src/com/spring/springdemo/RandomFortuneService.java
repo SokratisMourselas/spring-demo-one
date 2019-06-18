@@ -7,7 +7,7 @@ public class RandomFortuneService implements FortuneService {
 
     private String CLASS_NAME = "RandomFortuneService.class";
 
-    private String[] randomFortuneList = {"Workout no.1","Missed Workout", "15 min. Burn energize"};
+    private String[] randomFortuneList = {"Workout no.1", "Missed Workout", "15 min. Burn energize"};
 
     @Override
     public String getFortune(){

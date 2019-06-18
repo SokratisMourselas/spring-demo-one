@@ -4,7 +4,7 @@ import com.spring.springdemo.Services.FortuneService;
 
 public class HappyFortuneService implements FortuneService {
 
-    private String[] randomFortuneList = {"Workout no.1","Missed Workout", "15 min. Burn energize"};
+    private String[] randomFortuneList = {"Workout no.1", "Missed Workout", "15 min. Burn energize"};
 
     @Override
     public String getFortune(){
