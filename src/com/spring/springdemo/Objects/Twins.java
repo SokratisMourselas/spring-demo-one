@@ -23,6 +23,11 @@ public class Twins implements Shop {
         this.tables = tables;
     }
 
+    @Override
+    public String getContactDetails() {
+        return "Shop Name: " +name + "\nAddress: "+ address +  "\nEmail: "+ email + "\nPhone: "+ phoneNumber;
+    }
+
     public String getName() {
         return name;
     }
@@ -53,11 +58,5 @@ public class Twins implements Shop {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
-    }
-
-    @Override
-    public String getContactDetails() {
-
-        return "Shop Name: " +name + "\nAddress: "+ address +  "\nEmail: "+ email + "\nPhone: "+ phoneNumber;
     }
 }
