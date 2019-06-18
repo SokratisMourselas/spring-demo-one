@@ -1,22 +1,26 @@
 package com.spring.springdemo.Objects;
 
 import com.spring.springdemo.interfaces.Shop;
+import com.spring.springdemo.interfaces.Tables;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Twins implements Shop {
 
-
-//    value="Twins, Served with love"/>-->
-//    value="Plastira 1, Drosia"/>-->
-//    value="twins@twins-email.com"/>-->
-//    value="+30 210 813 5500"/>-->
     private String name = "Twins, Served with love";
     private String address = "Plastira 1, Drosia";
     private String email = "twins@twins-email.com";
     private String phoneNumber = "+30-210-813-5500";
 
+    private Tables tables;
+
     public Twins() {
+    }
+
+    @Autowired
+    public Twins(Tables tables) {
+        this.tables = tables;
     }
 
     public String getName() {
