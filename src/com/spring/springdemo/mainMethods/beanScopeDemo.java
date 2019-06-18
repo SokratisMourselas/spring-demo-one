@@ -14,15 +14,15 @@ public class beanScopeDemo {
 
         // loading beans
         Coach alphaCoach = context.getBean("myCoach", Coach.class);
-        Coach betaCoach = context.getBean("myCoach", Coach.class);
+//        Coach betaCoach = context.getBean("myCoach", Coach.class);
 
-        boolean result = (alphaCoach == betaCoach);
+//        boolean result = (alphaCoach == betaCoach);
 
-        System.out.println("\nPointing to the same object: " + result);
-
+//        System.out.println("\nPointing to the same object: " + result);
+//
         System.out.println("\nMemory location of alphaCoach: "+ alphaCoach);
-
-        System.out.println("\nMemory location of alphaCoach: "+ betaCoach);
+//
+//        System.out.println("\nMemory location of alphaCoach: "+ betaCoach);
 
         //context closed
         context.close();
