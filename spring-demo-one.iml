@@ -72,8 +72,7 @@
     <facet type="Spring" name="Spring">
       <configuration>
         <fileset id="fileset" name="ApplicationContext" removed="false">
-          <file>file://$MODULE_DIR$/src/applicationContext.xml</file>
-          <file>file://$MODULE_DIR$/src/beanScope-applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/src/com/spring/springdemo/contexts/real-applicationContext.xml</file>
         </fileset>
       </configuration>
     </facet>

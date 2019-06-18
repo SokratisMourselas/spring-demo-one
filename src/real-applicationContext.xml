@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com.spring.springdemo"/>
+
+    <bean id="myLoggerConfig" class="com.spring.springdemo.MyLoggerConfig" init-method="initLogger">
+        <property name="rootLoggerLevel" value="FINE" />
+        <property name="printedLoggerLevel" value="FINE"/>
+    </bean>
+
+    <bean id="twinsShop"
+          class="com.spring.springdemo.Objects.Twins">
+
+        <!-- Setting up a setter injection -->
+        <property name="name" value="Twins, Served with love"/>
+        <property name="address" value="Plastira 1, Drosia"/>
+        <property name="email" value="twins@twins-email.com"/>
+        <property name="phoneNumber" value="+30 210 813 5500"/>
+     </bean>
+
+
+</beans>
+
+
+
+
+
