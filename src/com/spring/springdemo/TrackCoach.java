@@ -1,6 +1,7 @@
 package com.spring.springdemo;
 
-import com.spring.springdemo.Services.FortuneService;
+import com.spring.springdemo.interfaces.FortuneService;
+import com.spring.springdemo.interfaces.Coach;
 
 public class TrackCoach implements Coach {
 

@@ -1,8 +1,5 @@
 package com.spring.springdemo.mainMethods;
 
-import com.spring.springdemo.Coach;
-import com.spring.springdemo.TrackCoach;
-
 public class MyApp {
 
 	public static void main(String[] args) {

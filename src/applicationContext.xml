@@ -12,11 +12,11 @@
     
      <!--define the dependency-->
     <bean id="myFortuneService"
-    		class="com.spring.springdemo.HappyFortuneService">
+    		class="com.spring.springdemo.Services.HappyFortuneService">
     	</bean>
 
     <bean id="myRandomFortuneService"
-          class="com.spring.springdemo.RandomFortuneService">
+          class="com.spring.springdemo.Services.RandomFortuneService">
     </bean>
     
  	<bean id="myTrackCoach"

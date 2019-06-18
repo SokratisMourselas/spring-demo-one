@@ -1,6 +1,6 @@
 package com.spring.springdemo.mainMethods;
 
-import com.spring.springdemo.Coach;
+import com.spring.springdemo.interfaces.Coach;
 import com.spring.springdemo.CricketCoach;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

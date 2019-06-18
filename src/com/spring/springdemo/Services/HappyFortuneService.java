@@ -1,6 +1,6 @@
-package com.spring.springdemo;
+package com.spring.springdemo.Services;
 
-import com.spring.springdemo.Services.FortuneService;
+import com.spring.springdemo.interfaces.FortuneService;
 
 public class HappyFortuneService implements FortuneService {
 
