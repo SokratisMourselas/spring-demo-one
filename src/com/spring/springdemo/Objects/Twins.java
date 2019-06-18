@@ -3,7 +3,7 @@ package com.spring.springdemo.Objects;
 import com.spring.springdemo.interfaces.Shop;
 import org.springframework.stereotype.Component;
 
-@Component("twinsShop")
+@Component
 public class Twins implements Shop {
 
     private String name;

@@ -10,7 +10,7 @@ public class TwinsServedWithLoveMain {
 
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("real-applicationContext.xml");
 
-        Shop twinsServedWithLove = context.getBean("twinsShop", Shop.class);
+        Shop twinsServedWithLove = context.getBean("twins", Shop.class);
 
         System.out.println( "\nPreparing selected Shop's Contact Details...\n" + twinsServedWithLove.getContactDetails()+ "\n" );
 
