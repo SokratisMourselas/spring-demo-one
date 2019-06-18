@@ -6,10 +6,15 @@ import org.springframework.stereotype.Component;
 @Component
 public class Twins implements Shop {
 
-    private String name;
-    private String address;
-    private String email;
-    private String phoneNumber;
+
+//    value="Twins, Served with love"/>-->
+//    value="Plastira 1, Drosia"/>-->
+//    value="twins@twins-email.com"/>-->
+//    value="+30 210 813 5500"/>-->
+    private String name = "Twins, Served with love";
+    private String address = "Plastira 1, Drosia";
+    private String email = "twins@twins-email.com";
+    private String phoneNumber = "+30-210-813-5500";
 
     public Twins() {
     }
