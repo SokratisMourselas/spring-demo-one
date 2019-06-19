@@ -7,6 +7,4 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan("com.spring.springdemo")
 public class DetailConfig {
 
-
-
 }
