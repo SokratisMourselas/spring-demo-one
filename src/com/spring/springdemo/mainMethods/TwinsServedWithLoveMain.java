@@ -14,6 +14,9 @@ public class TwinsServedWithLoveMain {
 
         System.out.println( "\nPreparing selected Shop's Contact Details...\n" + twinsServedWithLove.getContactDetails()+ "\n" );
 
+        // printing from injection
+        System.out.println(twinsServedWithLove.getNumberOfTablesOnly());
+
         context.close();
 
     }

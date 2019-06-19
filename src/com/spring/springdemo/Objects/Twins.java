@@ -16,16 +16,29 @@ public class Twins implements Shop {
     private Tables tables;
 
     public Twins() {
+
+        System.out.println(">> Twins.class: inside the default constructor");
+
     }
 
+//    @Autowired
+//    public Twins(Tables tables) {
+//        this.tables = tables;
+//    }
+
     @Autowired
-    public Twins(Tables tables) {
+    public void setTables(Tables tables) {
         this.tables = tables;
     }
 
     @Override
     public String getContactDetails() {
-        return "Shop Name: " +name + "\nAddress: "+ address +  "\nEmail: "+ email + "\nPhone: "+ phoneNumber;
+        return "Shop Name: " +name + "\nAddress: "+ address +  "\nEmail: "+ email + "\nPhone: "+ phoneNumber + "\nNumber of Available Tables: "+ tables.getNumberOfTables();
+    }
+
+    @Override
+    public int getNumberOfTablesOnly() {
+        return tables.getNumberOfTables();
     }
 
     public String getName() {

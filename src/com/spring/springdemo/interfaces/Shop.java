@@ -4,5 +4,6 @@ public interface Shop {
 
     String getContactDetails();
 
+    int getNumberOfTablesOnly();
 
 }
