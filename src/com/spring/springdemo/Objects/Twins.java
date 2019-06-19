@@ -7,6 +7,9 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 @Component
 @Scope("singleton")
 public class Twins implements Shop {
@@ -51,5 +54,15 @@ public class Twins implements Shop {
     public int getNumberOfVisitors() {
         numberOfVisitors++;
         return numberOfVisitors;
+    }
+
+    @PostConstruct
+    public void postConstruct(){
+        System.out.println("Inside PostConstruct method");
+    }
+
+    @PreDestroy
+    public void preDestroy(){
+        System.out.println("Inside PreDestroy method");
     }
 }

@@ -1,14 +1,17 @@
 package com.spring.springdemo.mainMethods;
 
+import com.spring.springdemo.Services.DetailConfig;
 import com.spring.springdemo.interfaces.Shop;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+//import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class TwinsServedWithLoveMain {
 
 
     public static void main(String[] args) {
 
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("real-applicationContext.xml");
+//        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("real-applicationContext.xml");
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(DetailConfig.class);
 
         Shop twinsServedWithLove = context.getBean("twins", Shop.class);
 
