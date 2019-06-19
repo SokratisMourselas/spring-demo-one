@@ -6,4 +6,5 @@ public interface Shop {
 
     int getNumberOfTablesOnly();
 
+    int getNumberOfVisitors();
 }

@@ -15,7 +15,11 @@ public class TwinsServedWithLoveMain {
         System.out.println( "\nPreparing selected Shop's Contact Details...\n" + twinsServedWithLove.getContactDetails()+ "\n" );
 
         // printing from injection
-        System.out.println(twinsServedWithLove.getNumberOfTablesOnly());
+        System.out.println("Number of visitors: " + twinsServedWithLove.getNumberOfVisitors());
+
+        // Creating another instance of Twins shop
+        Shop twinsServedWithLove2 = context.getBean("twins", Shop.class);
+        System.out.println("New number of visitors: " + twinsServedWithLove2.getNumberOfVisitors());
 
         context.close();
 
